@@ -1,0 +1,73 @@
+# You can use '&' for Color Codes
+# %PREFIX% - Insert this to place the Prefix from the path: "MESSAGE.GENERAL.PREFIX"
+# %CONSOLE_PREFIX% - Insert this to place the ConsolePrefix from the path: "MESSAGE.GENERAL.CONSOLEPREFIX"
+# %PLUGIN_NAME% - Insert this to place the name of the Plugin
+# %COMMAND% - Insert this to place the command name
+# %LISTENER% - Insert this to place the Listener name
+# %INFORMATION% - Insert this to place the Information Tag from the path: "MESSAGE.GENERAL.INFORMATION_TAG"
+# %COMMAND_ARGUMENT% - Insert this to place the argument of the command
+# %ENTER% - Insert this to join a next line
+# %PLAYER% - returns the Player name
+# %TARGET% - returns the Target name
+# %FILE% - returns File Path
+MESSAGE:
+  GENERAL:
+    PREFIX: "&eSystem &8»&7"
+    CONSOLE_PREFIX: "&8[&a%PLUGIN_NAME%&8]"
+    INFORMATION_TAG: "&8=======================&8[&eINFO&8]&8======================="
+    WALLET: "BTC"
+  USER:
+    NO_PERMISSION: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dazu hast du leider keine Rechte!%ENTER% "
+    WRONG_COMMAND_ARGUMENTATION: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Bitte nutze folgende Command Argumente: &b/%COMMAND_ARGUMENT%&7!%ENTER% "
+    PLAYER_NOT_ONLINE: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Der Spieler &b%PLAYER% &7ist leider nicht &aonline&7!%ENTER% "
+    WRONG_NUMBER: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du musst eine größere Zahl als &e0 &7eingeben!%ENTER% "
+    PAY_NOT_SELF: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du kannst dir selbst kein &aGeld &7geben :C! Such dir Freunde!%ENTER% "
+    PAY: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast dem Spieler &b%TARGET% &a%MONEY% BTC &7überwiesen!%ENTER%%PREFIX% &7Dein neuer Kontostand beträgt nun &a%BALANCE% %WALLET%&7!%ENTER% "
+    PAY_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast vom Spieler &b%PLAYER% &a%MONEY% BTC &7überwiesen bekommen!%ENTER%%PREFIX% &7Dein neuer Kontostand beträgt nun &a%BALANCE% %WALLET%&7!%ENTER% "
+    BANK_CHECK: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dein Kontostand auf deinem Bankkonto beträgt aktuell &a%BALANCE% %WALLET%&7!%ENTER% "
+    BANK_CHECK_ASK: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast den Spieler &b%TARGET% &7angefragt, ob du seinen Kontostand sehen darfst. Die Anfrage wird in &7!%ENTER% "
+    BANK_CHECK_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast eine Anfrage von dem Spieler &b%PLAYER% &7bekommen ob er dein Kontostand sehen darf&7. &7Nimm die Anfrage mit &a/%COMMAND_ARGUMENT% &7an&7!%ENTER% "
+    BANK_CHECK_AGREE_SEND: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast die Anfrage von &b%PLAYER% &7angenommen!%ENTER% "
+    BANK_CHECK_DISAGREE_SEND: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast die Anfrage von &b%PLAYER% &7abgelehnt!%ENTER% "
+    BANK_CHECK_AGREE_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Deine Anfrage wurde von &b%TARGET% angenommen!%ENTER% "
+    BANK_CHECK_DISAGREE_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Deine Anfrage wurde von &b%TARGET% abgelehnt!%ENTER% "
+    BANK_CHECK_TIMEOUT_SEND: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Die Anfrage ist ausgelaufen!%ENTER% "
+    BANK_CHECK_VIEW: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Der Kontostand von &b%TARGET% &7beträgt &a%BALANCE% %WALLET%&7!%ENTER% "
+    ECONOMY_CLEAR_SELF: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dein Bankkonto wurde geleert. Dein neuer Kontostand beträgt somit aktuell &a0 %WALLET%&7!%ENTER% "
+    ECONOMY_CLEAR: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast das Bankkonto von &b%TARGET% &7geleert. Sein neuer Kontostand beträgt somit aktuell &a0 %WALLET%&7!%ENTER% "
+    ECONOMY_CLEAR_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dein Bankkonto wurde von &e%PLAYER% &7geleert. Dein Kontostand beträgt somit aktuell &a0 %WALLET%&7!%ENTER% "
+    ECONOMY_RESET_SELF: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dein Bankkonto wurde zurückgesetzt. Dein neuer Kontostand beträgt somit aktuell &a%DEFAULT% %WALLET%&7!%ENTER% "
+    ECONOMY_RESET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Du hast das Bankkonto von &b%TARGET% &7zurückgesetzt. Sein neuer Kontostand beträgt somit aktuell &a%DEFAULT% %WALLET%&7!%ENTER% "
+    ECONOMY_RESET_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dein Bankkonto wurde von &e%PLAYER% &7zurückgesetzt. Dein neuer Kontostand beträgt somit aktuell &a%DEFAULT% %WALLET%&7!%ENTER% "
+    ECONOMY_SET_SELF: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dein Bankkonto wurde auf &e%BALANCE% %WALLET% &7gesetzt!%ENTER% "
+    ECONOMY_SET_OTHER: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Das Bankkonto von &b%TARGET% &7wurde auf &e%BALANCE% %WALLET% &7gesetzt!%ENTER% "
+    ECONOMY_SET_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dein Bankkonto wurde von &b%PLAYER% &7auf &e%BALANCE% %WALLET% &7gesetzt!%ENTER% "
+    ECONOMY_ADD_SELF: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dir wurden &e%MONEY% %WALLET% &7gutgeschrieben! Dein neuer Kontostand beträgt somit aktuell &a%BALANCE% %WALLET%&7%ENTER% "
+    ECONOMY_ADD_OTHER: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dem Bankkonto von &b%TARGET% wurden &e%MONEY% %WALLET% &7gutgeschrieben! Der neue Kontostand beträgt somit aktuell &a%BALANCE% %WALLET%&7%ENTER% "
+    ECONOMY_ADD_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dir wurden &e%MONEY% %WALLET% &7von &b%PLAYER% &7gutgeschrieben! Dein neuer Kontostand beträgt somit aktuell &a%BALANCE% %WALLET%&7%ENTER% "
+    ECONOMY_REMOVE_SELF: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dir wurden &e%MONEY% %WALLET% &7abgebucht! Dein neuer Kontostand beträgt somit aktuell &a%BALANCE% %WALLET%&7%ENTER% "
+    ECONOMY_REMOVE_OTHER: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Von dem Bankkonto von &b%TARGET% &7wurden &e%MONEY% %WALLET% &7abgebucht! Der neue Kontostand beträgt somit aktuell &a%BALANCE% %WALLET%&7%ENTER% "
+    ECONOMY_REMOVE_GET: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dir wurden &e%MONEY% %WALLET% &7von &b%PLAYER% &7abgebucht! Dein neuer Kontostand beträgt somit aktuell &a%BALANCE% %WALLET%&7%ENTER% "
+  CONSOLE:
+    NO_CONSOLE: "%CONSOLE_PREFIX% &fDu kannst den Command /&b%COMMAND% &fvon der &eKonsole&f aus nicht benutzen!"
+    ERROR: "%CONSOLE_PREFIX% &fEin Fehler!!! » Bitte beim Entwickler &bPaintableToast &fmelden!"
+    PLUGIN_LOAD: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fwird geladen!"
+    PLUGIN_SUCCESS_LOAD: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fwurde erfolgreich geladen!"
+    PLUGIN_ERROR_LOAD: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fhatte einen Fehler beim Laden!"
+    PLUGIN_STOP: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fwurde heruntergefahren!"
+    FILE_LOAD_CONFIG: "%CONSOLE_PREFIX% &fDer File &b%FILE% &fkonnte erfolgreich geladen werden!"
+    COMMAND_SUCCESS: "%CONSOLE_PREFIX% &fDer Command &d/%COMMAND% &fkonnte erfolgreich geladen werden!"
+    COMMAND_ERROR: "%CONSOLE_PREFIX% &cDer Command &d/%COMMAND% &chatte einen Fehler beim Laden!"
+    LISTENER_SUCCESS: "%CONSOLE_PREFIX% &fDas Event &e%LISTENER% &fwurde erfolgreich geladen!"
+    LISTENER_ERROR: "%CONSOLE_PREFIX% &cDas Event &e%LISTENER% &chatte einen Fehler beim Laden!"
+  MYSQL:
+    MYSQL_CONNECT: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fkonnte eine erfolgreiche &eMySQL Verbindung &fzur Connection: &f %ENTER%%CONSOLE_PREFIX% &bHost &8: &e%HOST%&f %ENTER%%CONSOLE_PREFIX% &bPort &8: &e%PORT% &f%ENTER%%CONSOLE_PREFIX% &bDatabase &8: &e%DATABASE%&f%ENTER%%CONSOLE_PREFIX% &bUsername &8: &e%USERNAME% &f%ENTER%%CONSOLE_PREFIX% &bPassword &8: &e%PASSWORD% &f%ENTER%%CONSOLE_PREFIX%&f herstellen! "
+    MYSQL_DISCONNECT: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fhat die &eMySQL Verbindung &fzur Connection: &f%ENTER%%CONSOLE_PREFIX% &bHost &8: &e%HOST%&f %ENTER%%CONSOLE_PREFIX% &bPort &8: &e%PORT% &f%ENTER%%CONSOLE_PREFIX% &bDatabase &8: &e%DATABASE%&f%ENTER%%CONSOLE_PREFIX% &bUsername &8: &e%USERNAME% &f%ENTER%%CONSOLE_PREFIX% &bPASSWORD &8: &e%PASSWORD% &f%ENTER%%CONSOLE_PREFIX%&f beendet! "
+    MYSQL_CONNECT_ERROR: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fkonnte keine erfolgreiche &eMySQL Verbindung &fzur Connection: &f%ENTER%%CONSOLE_PREFIX% &bHost &8: &e%HOST% &f%ENTER%%CONSOLE_PREFIX% &bPort &8: &e%PORT% &f%ENTER%%CONSOLE_PREFIX% &bDatabase &8: &e%DATABASE%&f%ENTER%%CONSOLE_PREFIX% &bUsername &8: &e%USERNAME% &f%ENTER%%CONSOLE_PREFIX% &bPASSWORD &8: &e%PASSWORD%&f %ENTER%%CONSOLE_PREFIX%&f herstellen! "
+    MYSQL_ERROR: "%CONSOLE_PREFIX% &fDie &eMySQL Verbindung &fhatte einen Fehler beim Laden!"
+  ARGUMENTS:
+    ECONOMY_COMMAND: "economy [ADD/REMOVE/RESET/SET/CLEAR] [PLAYER] {MONEY}"
+    PAY_COMMAND: "economy [PLAYER] {MONEY}"
+    BANK_COMMAND: "bank [PLAYER]"
+    BANK_CHECK_ASK_AGREE_COMMAND: "agree"
+    BANK_CHECK_ASK_DISAGREE_COMMAND: "disagree"

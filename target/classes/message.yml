@@ -1,0 +1,37 @@
+# You can use '&' for Color Codes
+# %PREFIX% - Insert this to place the Prefix from the path: "MESSAGE.GENERAL.PREFIX"
+# %CONSOLE_PREFIX% - Insert this to place the ConsolePrefix from the path: "MESSAGE.GENERAL.CONSOLEPREFIX"
+# %PLUGIN_NAME% - Insert this to place the name of the Plugin
+# %COMMAND% - Insert this to place the command name
+# %LISTENER% - Insert this to place the Listener name
+# %INFORMATION% - Insert this to place the Information Tag from the path: "MESSAGE.GENERAL.INFORMATION_TAG"
+# %COMMAND_ARGUMENT% - Insert this to place the argument of the command
+# %ENTER% - Insert this to join a next line
+# %PLAYER% - returns the Player name
+# %TARGET% - returns the Target name
+# %FILE% - returns File Path
+MESSAGE:
+  GENERAL:
+    PREFIX: "&eSystem &8»&7"
+    CONSOLE_PREFIX: "&8[&a%PLUGIN_NAME%&8]"
+    INFORMATION_TAG: "&8=======================&8[&eINFO&8]&8======================="
+  USER:
+    NO_PERMISSION: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Dazu hast du leider keine Rechte!%ENTER% "
+    WRONG_COMMAND_ARGUMENTATION: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Bitte nutze folgende Command Argumente: &b/%COMMAND_ARGUMENT%&7!%ENTER% "
+    PLAYER_NOT_ONLINE: " %ENTER%%INFORMATION%%ENTER%%PREFIX% &7Der Spieler &b%PLAYER% &7ist leider nicht &aonline&7!"
+  CONSOLE:
+    PLUGIN_LOAD: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fwird geladen!"
+    PLUGIN_SUCCESS_LOAD: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fwurde erfolgreich geladen!"
+    PLUGIN_ERROR_LOAD: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fhatte einen Fehler beim Laden!"
+    PLUGIN_STOP: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fwurde heruntergefahren!"
+    FILE_LOAD_CONFIG: "%CONSOLE_PREFIX% &fDer File &b%FILE% &fkonnte erfolgreich geladen werden!"
+    COMMAND_SUCCESS: "%CONSOLE_PREFIX% &fDer Command &d/%COMMAND% &fkonnte erfolgreich geladen werden!"
+    COMMAND_ERROR: "%CONSOLE_PREFIX% &cDer Command &d/%COMMAND% &chatte einen Fehler beim Laden!"
+    LISTENER_SUCCESS: "%CONSOLE_PREFIX% &fDas Event &e%LISTENER% &fwurde erfolgreich geladen!"
+    LISTENER_ERROR: "%CONSOLE_PREFIX% &cDas Event &e%LISTENER% &chatte einen Fehler beim Laden!"
+  MYSQL:
+    MYSQL_CONNECT: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fkonnte eine erfolgreiche &eMySQL Verbindung &fzur Connection: &f %ENTER%%CONSOLE_PREFIX% &bHost &8: &e%HOST%&f %ENTER%%CONSOLE_PREFIX% &bPort &8: &e%PORT% &f%ENTER%%CONSOLE_PREFIX% &bDatabase &8: &e%DATABASE%&f%ENTER%%CONSOLE_PREFIX% &bUsername &8: &e%USERNAME% &f%ENTER%%CONSOLE_PREFIX% &bPassword &8: &e%PASSWORD% &f%ENTER%%CONSOLE_PREFIX%&f herstellen! "
+    MYSQL_DISCONNECT: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fhat die &eMySQL Verbindung &fzur Connection: &f%ENTER%%CONSOLE_PREFIX% &bHost &8: &e%HOST%&f %ENTER%%CONSOLE_PREFIX% &bPort &8: &e%PORT% &f%ENTER%%CONSOLE_PREFIX% &bDatabase &8: &e%DATABASE%&f%ENTER%%CONSOLE_PREFIX% &bUsername &8: &e%USERNAME% &f%ENTER%%CONSOLE_PREFIX% &bPASSWORD &8: &e%PASSWORD% &f%ENTER%%CONSOLE_PREFIX%&f beendet! "
+    MYSQL_CONNECT_ERROR: "%CONSOLE_PREFIX% &fDas Plugin &a%PLUGIN_NAME% &fkonnte keine erfolgreiche &eMySQL Verbindung &fzur Connection: &f%ENTER%%CONSOLE_PREFIX% &bHost &8: &e%HOST% &f%ENTER%%CONSOLE_PREFIX% &bPort &8: &e%PORT% &f%ENTER%%CONSOLE_PREFIX% &bDatabase &8: &e%DATABASE%&f%ENTER%%CONSOLE_PREFIX% &bUsername &8: &e%USERNAME% &f%ENTER%%CONSOLE_PREFIX% &bPASSWORD &8: &e%PASSWORD%&f %ENTER%%CONSOLE_PREFIX%&f herstellen! "
+    MYSQL_ERROR: "%CONSOLE_PREFIX% &fDie &eMySQL Verbindung &fhatte einen Fehler beim Laden!"
+  ARGUMENTS:

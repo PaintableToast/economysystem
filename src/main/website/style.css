@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'cour';
+    src: url('cour.ttf') format('cour'),
+         url('cour.ttf') format('cour');
+    font-weight: 900;
+    font-style: normal;
+}
+.wrapper {
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: grey;
+    border-color: black;
+    padding-bottom: auto;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace
+}
+.red-block {
+    padding-bottom: 30px;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+}
+.red-block h1 {
+    position: fixed;
+    margin-top: 0%;
+    margin-left: 10px;
+}
+.left-site {
+    float: left;
+    margin-left: 3%;
+}
+.right-site {
+    float: right;
+    margin-right: 1%;
+}
+.site-3 {
+    background: rgb(175, 175, 175);
+    margin-top: 0%;
+    overflow: hidden;
+}
+.site {
+    margin-top: 0%;
+    overflow: hidden;
+    position: relative;
+}
+.wasserzeichen {
+    font-size: 400px;
+    top: 55px;
+    left: 40%;
+    right: 40%;
+    z-index: -1;
+    color: rgb(206, 206, 206);
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0%;
+    position: fixed;
+    margin-bottom: 0%;
+}
+p {
+    margin: 0%;
+}
+.diffrent {
+    margin-top: 10%;
+}
+

@@ -1,0 +1,9 @@
+name: System
+version: 1.0-SNAPSHOT
+main: de.paintabletoast.system.boot.Core
+api-version: 1.16
+authors: [ PaintableToast ]
+description: A Plugin
+website: paintabletoast.de
+commands:
+  paintabletoast:

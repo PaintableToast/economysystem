@@ -1,0 +1,3 @@
+PERMISSION:
+  ECONOMY_COMMAND_ADMIN: "economy.command.admin"
+  ECONOMY_COMMAND_VIEW_BALANCE: "bank.command.admin"
